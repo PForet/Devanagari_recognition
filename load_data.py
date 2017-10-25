@@ -52,6 +52,6 @@ def PIL_list_data(characters_type):
             
     # Report and return
     print("Raw {} loaded, {} obs of {} classes".format(characters_type,
-              len(img_list), len(os.listdir(img_path))))
+              len(img_list), len(set(img_labels))))
     return img_list, img_labels
 
